@@ -1,6 +1,7 @@
 import streamlit as st
 import tempfile
 from dotenv import load_dotenv
+from backend.llm import generate_answer
 
 from backend.embeddings import create_vector_store
 from backend.qa_chain import generate_answer
